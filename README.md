@@ -1,9 +1,11 @@
 # PeAR
+
 PeAR is a binary instrumentation tool built using the GTIRB framework
 that can add AFL++ or WinAFL instrumentation to x64 Linux and x86/x64 Windows
 binaries. It also supports adding coverage tracing instrumentation to x64/ARM64
 Linux binaries. It can be easily extended to develop other binary
 instrumentation tools.
+
 
 ## Features
 **Multiplatform binary fuzzing and tracing.** Details on the specific rewriters
@@ -137,3 +139,6 @@ and omit the `--vcvarsall-loc`, `--winafl32-afl-fuzz-loc`,
 I recommend using the `-v -rA -s` arguments with pytest so you can see the tests
 as they run live, including the WinAFL/AFL++ UI as the instrumented test
 binaries get run. If you want to hide this UI, use `--hide-afl-ui`.
+
+## Further reading
+> Alvin Charles, Adrian Herrera, Peter Oslington, and Alwen Tiu. *PeAR: A Static Binary Rewriting Framework for Binary-Only Fuzzing.* arXiv:2606.02126 [cs.CR], June 2026. https://arxiv.org/abs/2606.02126
